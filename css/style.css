@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background-color: #F5F5F5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main {
+    height: 100vh;
+}
+
+.queue li {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: all 0.4s ease-out;
+}
+
+.queue li:nth-child(1)  { transform: translate3d(0, 0%, 0); }
+.queue li:nth-child(2)  { transform: translate3d(0, 120%, 0); }
+.queue li:nth-child(3)  { transform: translate3d(0, 240%, 0); }
+.queue li:nth-child(4)  { transform: translate3d(0, 360%, 0); }
+.queue li:nth-child(5)  { transform: translate3d(0, 480%, 0); }
+.queue li:nth-child(6)  { transform: translate3d(0, 600%, 0); }
+.queue li:nth-child(7)  { transform: translate3d(0, 720%, 0); }
+.queue li:nth-child(8)  { transform: translate3d(0, 840%, 0); }
+.queue li:nth-child(9)  { transform: translate3d(0, 960%, 0); }
+.queue li:nth-child(10)  { transform: translate3d(0, 1080%, 0); }
+
+
+.item-enter {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.item-enter-active {
+    opacity: 1;
+}
+
+.item-leave {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.item-leave-active {
+    opacity: 0;
+}
+
+.queue div.title {
+    background-color: #2196F3;
+    font-size: 20px;
+	  font-weight: bold;
+}
+
+span.location {
+    font-weight: bold;
+    -webkit-transition: color 0.5s ease-in;
+}
+
+span.location.car {
+    color: green;
+}
+
+span.location.mixer {
+    color: red;
+}
+
+span.location.waiting {
+    color: black;
+}
+
+.card-1 p {
+    margin: 0.3rem;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+p.volume {
+    opacity: 1;
+    font-weight: bold;
+}
+
+div.time {
+    font-size: 50px;
+    text-align: center;
+}
+
+div.logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    content:url('../images/lkab_large.png');
+}
+
+div.powered {
+    font-size: 24px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.top-box {
+    background: #1976D2;
+    font-size: 45px;
+	  font-weight: bold;
+    color: #FFFFFF;
+    height: 100px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 1rem;
+}
+
+.top-box .title {
+    width: 50%;
+    text-align: center;
+}
+
+ul.queue {
+  position: relative;
+  width: 100%;
+}
+
+.card-1 {
+  background: #FFFFFF;
+  border-radius: 2px;
+  display: block;
+  margin: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+.card-1.mixer, .card-1.weigher {
+    border-radius: 30px;
+}
+
+.card-1.mixer div.title {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-1:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: #FAFAFA;
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
